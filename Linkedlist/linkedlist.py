@@ -19,3 +19,16 @@ class LinkedList:
 					break
 				lastNode = lastNode.next
 			lastNode.next = newNode
+
+	def printlist(self):
+
+		if self.head == None:
+			print("List is empty")
+
+		currentnode = self.head
+
+		while True:
+			print(currentnode.data,end = ' ')
+			if currentnode.next == None:
+				break
+			currentnode = currentnode.next
