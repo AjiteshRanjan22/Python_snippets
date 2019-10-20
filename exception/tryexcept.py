@@ -1,4 +1,6 @@
 import sys
 
-for line in sys.stdin:
-	
+try:
+	print(int(sys.stdin.readline()))
+except ValueError:
+	print('Not an integer')
